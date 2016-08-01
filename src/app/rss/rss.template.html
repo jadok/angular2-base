@@ -1,0 +1,15 @@
+<h2> {{ title }}</h2>
+<div class="rss-bloc">
+  <div *ngFor="let rss_f of tRss" class="col-1-4">
+    <div class="module hero">
+      <h4>{{ rss_f.title }}</h4>
+      <i>{{ rss_f.pubDate }}</i>
+      <p>
+        {{ rss_f.description }}
+      </p>
+      <a href="{{ rss_f.linked }}" title="{{ rss_f.title }}">
+        <span>{{ rss_f.title }}</span>
+      </a>
+    </div>
+  </div>
+</div>
